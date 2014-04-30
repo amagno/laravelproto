@@ -3,14 +3,23 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="">
+    <meta name="description" content="laravel project">
+    <meta name="author" content="Alexandre">
     {{ HTML::style('assets/bootstrap-3.1.1-dist/css/bootstrap.min.css') }}
 
     <title>Starter Template for Bootstrap</title>
     <style>
         body {
             padding-top: 50px;
+        }
+        .form-signin {
+            width: 300px;
+
+            margin: 0 auto;
+            margin-top: 50px;
+        }
+        .form-signin input {
+           margin: 10px 0;
         }
     </style>
 
