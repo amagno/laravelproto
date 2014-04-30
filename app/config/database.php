@@ -26,7 +26,7 @@ return array(
 	|
 	*/
 
-	'default' => 'mysql',
+	'default' => 'mysqldbfree',
 
 	/*
 	|--------------------------------------------------------------------------
@@ -52,16 +52,26 @@ return array(
 			'prefix'   => '',
 		),
 
-		'mysql' => array(
+		'mysqldbfree' => array(
 			'driver'    => 'mysql',
-			'host'      => 'localhost',
-			'database'  => 'laraveltest',
-			'username'  => 'root',
-			'password'  => '',
+			'host'      => 'db4free.net',
+			'database'  => 'devpiru1',
+			'username'  => 'devpiru1',
+			'password'  => 'ale456123',
 			'charset'   => 'utf8',
 			'collation' => 'utf8_unicode_ci',
 			'prefix'    => '',
 		),
+        'mysqllocal' => array(
+            'driver'    => 'mysql',
+            'host'      => 'localhost',
+            'database'  => 'laraveltest',
+            'username'  => 'root',
+            'password'  => '',
+            'charset'   => 'utf8',
+            'collation' => 'utf8_unicode_ci',
+            'prefix'    => '',
+        ),
 
 		'pgsql' => array(
 			'driver'   => 'pgsql',

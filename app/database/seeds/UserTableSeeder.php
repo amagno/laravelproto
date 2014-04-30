@@ -17,8 +17,8 @@ class UserTableSeeder extends Seeder {
             'email' => 'teste@teste.com',
             'nivelid' => 1,
             'status' => 1,
-            'usuario' => 'alexandre.monteiro',
-            'senha' => Hash::make('123')
+            'username' => 'alexandre.monteiro',
+            'password' => Hash::make('123')
 
         ));
         User::create(array(
@@ -27,8 +27,8 @@ class UserTableSeeder extends Seeder {
             'email' => 'teste1@teste.com',
             'nivelid' => 1,
             'status' => 1,
-            'usuario' => 'other.monteiro',
-            'senha' => Hash::make('123')
+            'username' => 'other.monteiro',
+            'password' => Hash::make('123')
 
         ));
     }

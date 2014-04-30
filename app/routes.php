@@ -11,17 +11,17 @@
 |
 */
 
-Route::get('/', function()
-{
-	return View::make('hello');
+Route::group(array('before' => 'Auth'), function(){
+    Route::get('/', function(){
+        return Redirect::to('login');
+    });
+    Route::get('index', function(){
+        return Redirect::to('login');
+    });
+    Route::get('home', function(){
+        return Redirect::to('login');
+    });
 });
-Route::get('test', function(){
 
-   return User::chunk(200, function($users){
-       foreach($users as $user){
-          echo $user->nome . '<br />';
-       }
-   });
-});
 
-Route::resource('users', 'UsersController');
+Route::controller('login', 'LoginController');

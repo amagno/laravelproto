@@ -19,7 +19,7 @@
             margin-top: 50px;
         }
         .form-signin input {
-           margin: 10px 0;
+           margin:0 0 15px 0;
         }
     </style>
 
@@ -50,7 +50,13 @@
 </div>
 
 <div class="container">
+
+ @if(Session::has('message'))
+    <p class="alert">{{ Session::get('message') }}</p>
+ @endif
+
     {{ $content }}
+    
 </div>
 
 <!--Javaascript Files-->
